@@ -1,0 +1,9 @@
+@use "colors" as *;
+@use "reset" as *;
+
+body {
+	font-family: "Rubik", sans-serif;
+	// - Font size: 18px (card titles e.g. Work, Play)
+	// - Weights: 300, 400, 500
+	background-color: $blue;
+}
