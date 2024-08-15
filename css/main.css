@@ -82,7 +82,7 @@ body {
   gap: 0.2em;
 }
 .name-box__report-for {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 .name-box__person-name {
   font-size: 2.2rem;
@@ -99,10 +99,26 @@ body {
   padding: 0.6em;
   font-size: 1.6rem;
   color: rgb(111, 118, 200);
+  transition: color 0.3s;
+}
+.name-box__timeframes--btn:hover {
+  color: rgb(255, 255, 255);
 }
 
 .activity-box {
+  position: relative;
   padding: 1px;
+  z-index: -1;
+}
+.activity-box__icon {
+  position: absolute;
+  right: 1.6em;
+  top: -0.4em;
+  width: 5.2em;
+  height: 5.2em;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -10;
 }
 .activity-box__content {
   margin-top: 2.5em;
@@ -135,27 +151,134 @@ body {
 .work-box {
   background-color: rgb(255, 140, 102);
 }
+.work-box__icon {
+  background-image: url("../images/icon-work.svg");
+}
 
 .play-box {
   background-color: rgb(86, 194, 230);
+}
+.play-box__icon {
+  background-image: url("../images/icon-play.svg");
 }
 
 .study-box {
   background-color: rgb(255, 92, 124);
 }
+.study-box__icon {
+  background-image: url("../images/icon-study.svg");
+}
 
 .exercise-box {
   background-color: rgb(74, 207, 129);
+}
+.exercise-box__icon {
+  background-image: url("../images/icon-exercise.svg");
 }
 
 .socjal-box {
   background-color: rgb(117, 54, 211);
 }
+.socjal-box__icon {
+  background-image: url("../images/icon-social.svg");
+}
 
 .self-care-box {
   background-color: rgb(241, 198, 91);
 }
+.self-care-box__icon {
+  background-image: url("../images/icon-self-care.svg");
+}
 
 .active {
   color: rgb(189, 193, 255);
+}
+
+@media (min-width: 768px) {
+  .dashboard {
+    width: 700px;
+    display: grid;
+    grid-template-columns: 25% 35% 35%;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 2em;
+  }
+  .name-box,
+  .activity-box {
+    margin-bottom: 0;
+  }
+  .name-box {
+    grid-column: 1/2;
+    grid-row: 1/4;
+  }
+  .name-box__header {
+    height: 60%;
+    flex-direction: column;
+  }
+  .name-box__img {
+    height: 8em;
+    width: 8em;
+    margin-bottom: 2.5em;
+  }
+  .name-box__person-info {
+    gap: 0.6em;
+  }
+  .name-box__person-name {
+    font-size: 2.6rem;
+  }
+  .name-box__timeframes {
+    height: 40%;
+    padding: 3em 1.5em;
+    flex-direction: column;
+    -moz-text-align-last: left;
+         text-align-last: left;
+  }
+  .name-box__timeframes--btn {
+    padding: 0.6em;
+    font-size: 1.6rem;
+  }
+}
+@media (min-width: 992px) {
+  .dashboard {
+    width: 900px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+  }
+  .name-box {
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+  .name-box__header {
+    height: 60%;
+    flex-direction: column;
+  }
+  .name-box__person-name {
+    font-size: 2.8rem;
+  }
+  .activity-box__content {
+    margin-top: 2.5em;
+    padding: 2em;
+  }
+  .activity-box__top, .activity-box__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .activity-box__top {
+    margin-bottom: 2.5em;
+  }
+  .activity-box__bottom {
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+  }
+  .activity-box__title {
+    font-size: 2.2rem;
+  }
+  .activity-box__current-time {
+    margin-bottom: 0.2em;
+    font-size: 4.4rem;
+  }
+  .activity-box__last-time {
+    margin-bottom: 0.5em;
+  }
 }/*# sourceMappingURL=main.css.map */
