@@ -36,6 +36,126 @@ button {
 }
 
 body {
+  min-height: 100svh;
+  padding: 6em 2em;
   font-family: "Rubik", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(189, 193, 255);
+  background-color: rgb(15, 20, 36);
+}
+
+.dashboard {
+  width: 33rem;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.name-box,
+.activity-box {
+  margin-bottom: 2em;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.name-box {
+  background-color: rgb(28, 31, 74);
+}
+.name-box__header {
+  padding: 2.5em;
+  display: flex;
   background-color: rgb(88, 71, 235);
+  border-radius: 12px;
+}
+.name-box__img {
+  height: 6em;
+  width: 6em;
+  margin-right: 1.5em;
+  border: solid 2px white;
+  border-radius: 50%;
+}
+.name-box__person-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.2em;
+}
+.name-box__report-for {
+  font-size: 1.2rem;
+}
+.name-box__person-name {
+  font-size: 2.2rem;
+  font-weight: 300;
+  color: rgb(255, 255, 255);
+}
+.name-box__timeframes {
+  width: 100%;
+  padding: 1.3em 2em;
+  display: flex;
+  justify-content: space-between;
+}
+.name-box__timeframes--btn {
+  padding: 0.6em;
+  font-size: 1.6rem;
+  color: rgb(111, 118, 200);
+}
+
+.activity-box {
+  padding: 1px;
+}
+.activity-box__content {
+  margin-top: 2.5em;
+  padding: 2em;
+  background-color: rgb(28, 31, 74);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.activity-box__top, .activity-box__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.activity-box__top {
+  margin-bottom: 0.6em;
+}
+.activity-box__title {
+  font-size: 1.8rem;
+  color: rgb(255, 255, 255);
+}
+.activity-box__current-time {
+  font-size: 2.8rem;
+  font-weight: 300;
+  color: rgb(255, 255, 255);
+}
+.activity-box__last-time {
+  font-size: 1.2rem;
+}
+
+.work-box {
+  background-color: rgb(255, 140, 102);
+}
+
+.play-box {
+  background-color: rgb(86, 194, 230);
+}
+
+.study-box {
+  background-color: rgb(255, 92, 124);
+}
+
+.exercise-box {
+  background-color: rgb(74, 207, 129);
+}
+
+.socjal-box {
+  background-color: rgb(117, 54, 211);
+}
+
+.self-care-box {
+  background-color: rgb(241, 198, 91);
+}
+
+.active {
+  color: rgb(189, 193, 255);
 }/*# sourceMappingURL=main.css.map */

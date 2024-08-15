@@ -19,16 +19,18 @@
 			<!-- NAME BOX -->
 			<div class="name-box">
 				<div class="name-box__header">
-					<img src="" alt="" class="name-box__img" />
+					<img src="./images/image-jeremy.png" alt="" class="name-box__img" />
 
-					<p class="name-box__report-for">Report for</p>
-					<p class="name-box__person-name">Jeremy Robson</p>
+					<div class="name-box__person-info">
+						<span class="name-box__report-for">Report for</span>
+						<span class="name-box__person-name">Jeremy Robson</span>
+					</div>
 				</div>
 
 				<div class="name-box__timeframes">
-					<button class="name-box__timeframe" id="daily-timeframe">Daily</button>
-					<button class="name-box__timeframe" id="weekly-timeframe">Weekly</button>
-					<button class="name-box__timeframe" id="monthly-timeframe">Monthly</button>
+					<button class="name-box__timeframes--btn" id="daily-timeframe">Daily</button>
+					<button class="name-box__timeframes--btn active" id="weekly-timeframe">Weekly</button>
+					<button class="name-box__timeframes--btn" id="monthly-timeframe">Monthly</button>
 				</div>
 			</div>
 
@@ -39,14 +41,21 @@
 				<div class="activity-box__content">
 					<div class="activity-box__top">
 						<span class="activity-box__title">Work</span>
-						<button class="activity-box__btn">...</button>
+						<button class="activity-box__btn">
+							<svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+									fill="#BBC0FF"
+									fill-rule="evenodd" />
+							</svg>
+						</button>
 					</div>
 
 					<div class="activity-box__bottom">
-						<span class="activity-box__current-time" id="work-current-time">32</span><span class="work-hrs">hrs</span>
+						<div class="activity-box__current-time"><span id="work-current-time">32</span><span class="work-hrs">hrs</span></div>
 
 						<div class="activity-box__last-time">
-							<span class="activity-box__range-time">Last Week</span>
+							<span class="activity-box__range-time">Last Week -</span>
 							<span class="activity-box__previous-time" id="work-previous-time">36</span><span class="work-hrs">hrs</span>
 						</div>
 
@@ -69,14 +78,21 @@
 				<div class="activity-box__content">
 					<div class="activity-box__top">
 						<span class="activity-box__title">Play</span>
-						<button class="activity-box__btn">...</button>
+						<button class="activity-box__btn">
+							<svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+									fill="#BBC0FF"
+									fill-rule="evenodd" />
+							</svg>
+						</button>
 					</div>
 
 					<div class="activity-box__bottom">
-						<span class="activity-box__current-time" id="play-current-time">10</span><span class="play-hrs">hrs</span>
+						<div class="activity-box__current-time"><span id="play-current-time">10</span><span class="play-hrs">hrs</span></div>
 
 						<div class="activity-box__last-time">
-							<span class="activity-box__range-time">Last Week</span>
+							<span class="activity-box__range-time">Last Week -</span>
 							<span class="activity-box__previous-time" id="play-previous-time">8</span><span class="play-hrs">hrs</span>
 						</div>
 
@@ -99,14 +115,21 @@
 				<div class="activity-box__content">
 					<div class="activity-box__top">
 						<span class="activity-box__title">Study</span>
-						<button class="activity-box__btn">...</button>
+						<button class="activity-box__btn">
+							<svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+									fill="#BBC0FF"
+									fill-rule="evenodd" />
+							</svg>
+						</button>
 					</div>
 
 					<div class="activity-box__bottom">
-						<span class="activity-box__current-time" id="study-current-time">4</span><span class="studyexercise-hrs">hrs</span>
+						<div class="activity-box__current-time"><span id="study-current-time">4</span><span class="study-hrs">hrs</span></div>
 
 						<div class="activity-box__last-time">
-							<span class="activity-box__range-time">Last Week</span>
+							<span class="activity-box__range-time">Last Week -</span>
 							<span class="activity-box__previous-time" id="study-previous-time">7</span><span class="study-hrs">hrs</span>
 						</div>
 
@@ -129,14 +152,21 @@
 				<div class="activity-box__content">
 					<div class="activity-box__top">
 						<span class="activity-box__title">Exercise</span>
-						<button class="activity-box__btn">...</button>
+						<button class="activity-box__btn">
+							<svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+									fill="#BBC0FF"
+									fill-rule="evenodd" />
+							</svg>
+						</button>
 					</div>
 
 					<div class="activity-box__bottom">
-						<span class="activity-box__current-time" id="exercise-current-time">4</span><span class="exercise-hrs">hrs</span>
+						<div class="activity-box__current-time"><span id="exercise-current-time">4</span><span class="exercise-hrs">hrs</span></div>
 
 						<div class="activity-box__last-time">
-							<span class="activity-box__range-time">Last Week</span>
+							<span class="activity-box__range-time">Last Week -</span>
 							<span class="activity-box__previous-time" id="exercise-previous-time">5</span><span class="exercise-hrs">hrs</span>
 						</div>
 
@@ -159,14 +189,21 @@
 				<div class="activity-box__content">
 					<div class="activity-box__top">
 						<span class="activity-box__title">Socjal</span>
-						<button class="activity-box__btn">...</button>
+						<button class="activity-box__btn">
+							<svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+									fill="#BBC0FF"
+									fill-rule="evenodd" />
+							</svg>
+						</button>
 					</div>
 
 					<div class="activity-box__bottom">
-						<span class="activity-box__current-time" id="socjal-current-time">5</span><span class="socjal-hrs">hrs</span>
+						<div class="activity-box__current-time"><span id="socjal-current-time">5</span><span class="socjal-hrs">hrs</span></div>
 
 						<div class="activity-box__last-time">
-							<span class="activity-box__range-time">Last Week</span>
+							<span class="activity-box__range-time">Last Week -</span>
 							<span class="activity-box__previous-time" id="socjal-previous-time">10</span><span class="socjal-hrs">hrs</span>
 						</div>
 
@@ -189,14 +226,21 @@
 				<div class="activity-box__content">
 					<div class="activity-box__top">
 						<span class="activity-box__title">Self-care</span>
-						<button class="activity-box__btn">...</button>
+						<button class="activity-box__btn">
+							<svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+									fill="#BBC0FF"
+									fill-rule="evenodd" />
+							</svg>
+						</button>
 					</div>
 
 					<div class="activity-box__bottom">
-						<span class="activity-box__current-time" id="self-care-current-time">5</span><span class="self-care-hrs">hrs</span>
+						<div class="activity-box__current-time"><span id="self-care-current-time">2</span><span class="self-care-hrs">hrs</span></div>
 
 						<div class="activity-box__last-time">
-							<span class="activity-box__range-time">Last Week</span>
+							<span class="activity-box__range-time">Last Week -</span>
 							<span class="activity-box__previous-time" id="self-care-previous-time">10</span><span class="self-care-hrs">hrs</span>
 						</div>
 

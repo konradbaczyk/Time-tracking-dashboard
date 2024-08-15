@@ -2,8 +2,141 @@
 @use "reset" as *;
 
 body {
+	min-height: 100svh;
+	padding: 6em 2em;
 	font-family: "Rubik", sans-serif;
 	// - Font size: 18px (card titles e.g. Work, Play)
 	// - Weights: 300, 400, 500
-	background-color: $blue;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: $pale-blue;
+	background-color: $very-dark-blue;
+}
+
+.dashboard {
+	width: 33rem;
+	height: fit-content;
+}
+
+.name-box,
+.activity-box {
+	margin-bottom: 2em;
+	border-radius: 12px;
+	overflow: hidden;
+}
+
+.name-box {
+	background-color: $dark-blue;
+
+	&__header {
+		padding: 2.5em;
+		display: flex;
+		background-color: $blue;
+		border-radius: 12px;
+	}
+
+	&__img {
+		height: 6em;
+		width: 6em;
+		margin-right: 1.5em;
+		border: solid 2px white;
+		border-radius: 50%;
+	}
+
+	&__person-info {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: 0.2em;
+	}
+
+	&__report-for {
+		font-size: 1.2rem;
+	}
+
+	&__person-name {
+		font-size: 2.2rem;
+		font-weight: 300;
+		color: $white;
+	}
+
+	&__timeframes {
+		width: 100%;
+		padding: 1.3em 2em;
+		display: flex;
+		justify-content: space-between;
+
+		&--btn {
+			padding: 0.6em;
+			font-size: 1.6rem;
+			color: $desaturated-blue;
+		}
+	}
+}
+
+.activity-box {
+	padding: 1px;
+	// &__img {
+	// 	position: absolute;
+	// }
+
+	&__content {
+		margin-top: 2.5em;
+		padding: 2em;
+		background-color: $dark-blue;
+		border-radius: 12px;
+		overflow: hidden;
+	}
+
+	&__top,
+	&__bottom {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__top {
+		margin-bottom: 0.6em;
+	}
+
+	&__title {
+		font-size: 1.8rem;
+		color: $white;
+	}
+
+	&__current-time {
+		font-size: 2.8rem;
+		font-weight: 300;
+		color: $white;
+	}
+
+	&__last-time {
+		font-size: 1.2rem;
+	}
+}
+
+.work-box {
+	background-color: $light-red-work;
+}
+
+.play-box {
+	background-color: $soft-blue-play;
+}
+.study-box {
+	background-color: $light-red-study;
+}
+.exercise-box {
+	background-color: $lime-green-exercise;
+}
+.socjal-box {
+	background-color: $violet-social;
+}
+.self-care-box {
+	background-color: $soft-orange-self-care;
+}
+
+// COMPONENTS
+.active {
+	color: $pale-blue;
 }
