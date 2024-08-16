@@ -107,8 +107,10 @@ body {
 
 .activity-box {
   position: relative;
+  height: -moz-fit-content;
+  height: fit-content;
   padding: 1px;
-  z-index: -1;
+  z-index: 1;
 }
 .activity-box__icon {
   position: absolute;
@@ -146,6 +148,15 @@ body {
 }
 .activity-box__last-time {
   font-size: 1.2rem;
+}
+.activity-box__btn {
+  padding: 0.4em;
+}
+.activity-box path {
+  transition: fill 0.3s;
+}
+.activity-box__btn:hover path {
+  fill: rgb(255, 255, 255);
 }
 
 .work-box {
@@ -235,6 +246,9 @@ body {
   .name-box__timeframes--btn {
     padding: 0.6em;
     font-size: 1.6rem;
+  }
+  .activity-box {
+    height: 100%;
   }
 }
 @media (min-width: 992px) {

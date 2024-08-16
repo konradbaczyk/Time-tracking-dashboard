@@ -82,8 +82,9 @@ body {
 
 .activity-box {
 	position: relative;
+	height: fit-content;
 	padding: 1px;
-	z-index: -1;
+	z-index: 1;
 
 	&__icon {
 		position: absolute;
@@ -128,6 +129,18 @@ body {
 
 	&__last-time {
 		font-size: 1.2rem;
+	}
+
+	&__btn {
+		padding: 0.4em;
+	}
+
+	path {
+		transition: fill 0.3s;
+	}
+
+	&__btn:hover path {
+		fill: $white;
 	}
 }
 
@@ -229,6 +242,10 @@ body {
 				font-size: 1.6rem;
 			}
 		}
+	}
+
+	.activity-box {
+		height: 100%;
 	}
 }
 
